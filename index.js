@@ -1,3 +1,9 @@
+/*!
+ *  simple-heatmap
+ *  By https://github.com/dwqdaiwenqi 
+ *  Github: https://github.com/dwqdaiwenqi/simple-heatmap
+ *  MIT Licensed.
+ */
 {
     var heatpoints = [...Array(500)].map(()=>{
       return [Math.random()*500,Math.random()*500,Math.random()*300]

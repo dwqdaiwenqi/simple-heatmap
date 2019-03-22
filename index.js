@@ -1,11 +1,10 @@
+
 /*!
  *  simple-heatmap
  *  By https://github.com/dwqdaiwenqi 
  *  Github: https://github.com/dwqdaiwenqi/simple-heatmap
  *  MIT Licensed.
  */
-
-
   class Palette{
     constructor(gradient){
       this.gradient = gradient
@@ -111,10 +110,11 @@
         pixels2[i+2] = b
         pixels2[i+3] = a
 
-  //       //alpha 0-1
+  //       //alpha
 
         let idx = a/256*this.palette.canvas.width|0
-   
+        // alpha强度作为颜色映射依据
+        // 颜色映射强度从调色盘中获得
         pixels2[i] = this.palette.pixels[idx*4]
         pixels2[i+1] = this.palette.pixels[idx*4+1]
         pixels2[i+2] = this.palette.pixels[idx*4+2]
@@ -124,4 +124,3 @@
 
     }
   }
-

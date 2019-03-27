@@ -56,6 +56,9 @@
   }
   class HeatMapOuO{
     constructor(data,opt,$el){
+      console.log("%c https://github.com/dwqdaiwenqi/simple-heatmap", "font-size:20px;color:aqua;")
+      console.log("%c --- :)", "font-size:20px;color:aqua;")
+     
       this.data =data
       this.opt = Object.assign({
         radius:20,

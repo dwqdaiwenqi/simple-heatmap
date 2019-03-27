@@ -1,11 +1,10 @@
-
 /*!
  *  simple-heatmap
  *  By https://github.com/dwqdaiwenqi 
  *  Github: https://github.com/dwqdaiwenqi/simple-heatmap
  *  MIT Licensed.
  */
-  class Palette{
+ class Palette{
     constructor(gradient){
       this.gradient = gradient
       this.canvas = document.createElement('canvas')
@@ -123,4 +122,4 @@
       this.context.putImageData(colored,0,0)
 
     }
-  }
+  } 

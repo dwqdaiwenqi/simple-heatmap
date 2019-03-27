@@ -9,7 +9,7 @@
 <script src="//static.xyimg.net/cn/static/fed/common/js/simple-heatmap.js?2"></script>
 <!-- ... -->
 ```
-#### js
+#### ---js----
 ```js
     var heatpoints = [...Array(500)].map(()=>{
       return [Math.random()*500,Math.random()*500,Math.random()*300]
@@ -41,6 +41,44 @@
   
   heat.render()
     
+```
+#### web component
+
+```html
+  <style>
+    simple-heatmap{
+      /* display: block;
+      width:340px;
+      height:770px;
+      margin:0 auto; */
+      display: block;
+      width:100%;
+      height:100%;
+      margin:0 auto;
+    }
+  </style>
+  <simple-heatmap id="hmap" api="//www.xy.com/api/heatmaps/?grids=5929"></simple-heatmap>
+  <script>
+    let $hmap = document.querySelector('#hmap')
+    $hmap.param = {
+      radius:20,
+      alpha:.3,
+      // gradient:{
+      //   .4: 'blue',
+      //   .6: 'cyan',
+      //   .7: 'lime',
+      //   .8: 'yellow',
+      //   .0: 'red'
+      // }
+      gradient:{
+        .4: 'blue',
+        .6: 'cyan',
+        .7: 'lime',
+        .8: 'yellow',
+        1.0: 'red'
+      }
+    }
+  </script>
 ```
 ### 参考 
 http://www.cnblogs.com/fuckgiser/p/6424099.html

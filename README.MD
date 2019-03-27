@@ -1,6 +1,13 @@
 ## 手撸一个heatmap
 
+
 ### 用法
+
+```html
+<!-- ... -->
+<script src="//static.xyimg.net/cn/static/fed/common/js/simple-heatmap.js?2"></script>
+<!-- ... -->
+```
 ```js
     var heatpoints = [...Array(500)].map(()=>{
       return [Math.random()*500,Math.random()*500,Math.random()*300]
